@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALTAMASH ABAYA — Haute Modest Couture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alabaster: '#FAF8F5',
+            ivory: '#F3EFEA',
+            espresso: '#1C1917',
+            taupe: '#6E665F',
+            gold: '#B89758',
+            goldDark: '#9B7D44',
+            sand: '#E6DFD5',
+            sage: '#4A5D4E'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    body {
+      background-color: #FAF8F5;
+      color: #1C1917;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .glass-nav {
+      background: rgba(250, 248, 245, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .product-card:hover .product-img {
+      transform: scale(1.04);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 5px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #F3EFEA;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #D2C7B8;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="selection:bg-gold selection:text-white">
+
+  <!-- Announcement Bar -->
+  <div class="bg-espresso text-alabaster text-[11px] tracking-[0.2em] uppercase py-2.5 px-4 text-center">
+    Complimentary Express Delivery Across Pakistan &bull; Worldwide Bespoke Shipping Available
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Left Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-[0.18em] text-espresso/80">
+        <a href="#collections" class="hover:text-gold transition-colors">Collections</a>
+        <a href="#lookbook" class="hover:text-gold transition-colors">Lookbook</a>
+        <a href="#atelier" class="hover:text-gold transition-colors">The Atelier</a>
+        <a href="#sizing" class="hover:text-gold transition-colors">Size Guide</a>
+        <a href="#bespoke" class="hover:text-gold transition-colors">Bespoke</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenuBtn" class="md:hidden p-2 text-espresso" aria-label="Open Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
+      <!-- Brand Monogram & Wordmark -->
+      <a href="#" class="flex flex-col items-center group">
+        <span class="font-display text-2xl sm:text-3xl tracking-[0.22em] font-semibold text-espresso">
+          ALTAMASH
+        </span>
+        <span class="text-[9px] tracking-[0.42em] uppercase text-gold -mt-1">
+          ABAYA COUTURE
+        </span>
+      </a>
+
+      <!-- Right Actions -->
+      <div class="flex items-center space-x-4 sm:space-x-6">
+        <!-- Currency Switcher -->
+        <button id="currencyToggle" class="text-xs font-medium tracking-widest uppercase px-2.5 py-1 border border-sand rounded-full hover:border-gold transition-colors" title="Switch Currency">
+          PKR
+        </button>
+
+        <!-- Search Toggle -->
+        <button id="searchToggle" class="text-espresso hover:text-gold transition-colors" aria-label="Search">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </button>
+
+        <!-- Wishlist Indicator -->
+        <button id="wishlistFilterBtn" class="relative text-espresso hover:text-gold transition-colors" aria-label="Wishlist">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.7
